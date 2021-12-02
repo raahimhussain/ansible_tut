@@ -1,0 +1,10 @@
+- name: Play to Packages
+  hosts:
+    - prod
+  tasks:
+  - name: Install php and nginx
+    package:
+      name:
+        - php
+        - nginx
+      state: present
